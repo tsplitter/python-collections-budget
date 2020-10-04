@@ -46,7 +46,7 @@ def main():
         print(entry)
     
     fig, ax = plt.subplots()
-    labels = ['Expenses', 'Overages', 'Budget']
+    labels = ['myBudgetList.sum_expenses', 'myBudgetList.sum_overages', 'myBudgetList.Budget']
     values = [sum_expenses, sum_overages, budget]
     ax.bar(labels, values, color=['green', 'red','blue'])
     plt.show()
