@@ -47,8 +47,9 @@ def main():
     
     fig, ax = plt.subplots()
     labels = ['sum_expenses', 'sum_overages', 'budget']
-    values = ['myBudgetList.sum_expenses', 'myBudgetList.sum_overages', 'myBudgetList.Budget']
+    values = [myBudgetList.sum_expenses, myBudgetList.sum_overages, myBudgetList.Budget]
     ax.bar(labels, values, color=['green', 'red','blue'])
+    ax.set_title('Your total expenses vs. total budget')
     plt.show()
 
 
